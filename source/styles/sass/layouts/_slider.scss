@@ -21,7 +21,11 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-left: 10px;
-    background: darkgrey;
+    background: rgb(214, 210, 210);
     width: 20px;
     height: 20px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: rgb(219, 207, 207);
 }

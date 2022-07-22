@@ -316,7 +316,7 @@ nav {
 .main__second-title {
   font-family: "Cairo", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 38px;
   line-height: 2;
   color: #ffffff;
@@ -701,9 +701,13 @@ nav {
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 10px;
-  background: darkgrey;
+  background: rgb(214, 210, 210);
   width: 20px;
   height: 20px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: rgb(219, 207, 207);
 }
 
 footer {
@@ -810,6 +814,9 @@ footer .footer__copyright {
   .sidepanel {
     display: none;
   }
+  .header {
+    margin-bottom: 30%;
+  }
   .header .translate-row {
     width: 100px;
     position: absolute;
@@ -860,12 +867,12 @@ footer .footer__copyright {
     margin: 0 auto;
   }
   .main .main__first-screen {
-    height: 70vh;
     position: relative;
     width: 100%;
     padding: 0;
     margin-top: 100px;
     padding-bottom: 0;
+    background: #0b1d26;
   }
   .main .main__first-screen .main__content {
     display: flex;
@@ -874,7 +881,7 @@ footer .footer__copyright {
     width: 100%;
     justify-content: center;
     margin-left: 0 !important;
-    padding-bottom: 0;
+    padding-top: 50px;
     margin: 0 auto !important;
   }
   .main .main__first-screen .main__content .main__content-right {
@@ -930,6 +937,7 @@ footer .footer__copyright {
   #section2 {
     padding-top: 0;
     padding-bottom: 0;
+    background: #0b1d26;
   }
   .main-content-left {
     flex-direction: column;
@@ -939,7 +947,7 @@ footer .footer__copyright {
   }
   .abstract {
     position: absolute;
-    font-size: 60px;
+    font-size: 40px;
   }
   .abstract1 {
     top: 40px;
@@ -969,8 +977,6 @@ footer .footer__copyright {
   .main-content__wrap {
     display: flex;
     flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     justify-content: center;
     align-items: center;
     margin: 140px auto;
@@ -1058,6 +1064,9 @@ footer .footer__copyright {
   .progress-scroll {
     display: none;
   }
+  .header {
+    margin-bottom: 30%;
+  }
   .header .translate-row {
     position: absolute;
     left: 30px;
@@ -1105,10 +1114,11 @@ footer .footer__copyright {
     display: flex;
     padding: 0;
     margin-top: 130px;
-    height: 100vh;
     flex-direction: column;
   }
   .main .main__first-screen .main__content {
+    background: #0b1d26;
+    height: 630px;
     justify-content: center;
     align-items: flex-start;
     margin-left: 50px;
@@ -1153,11 +1163,11 @@ footer .footer__copyright {
     max-width: -moz-fit-content;
     max-width: fit-content;
     margin: 30px auto;
-    font-size: 30px;
-    padding: 0 55px;
+    padding: 0 25px;
     text-align: justify;
     font-weight: 600;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 1.6;
   }
   .main .section {
     margin-top: 0px;
@@ -1187,6 +1197,7 @@ footer .footer__copyright {
   }
   .main-content-left .m--width {
     font-size: 30px !important;
+    text-align: center;
   }
   .main-content-left .abstract {
     opacity: 0.6;
@@ -1232,6 +1243,7 @@ footer .footer__copyright {
   }
   .--main-descr-option {
     padding: 0 15px;
+    font-size: 25px !important;
   }
 }
 @media (min-width: 1241px) and (max-width: 1440px) {
@@ -1241,8 +1253,11 @@ footer .footer__copyright {
   }
   .main .main__first-screen .main__content .main__second-title {
     max-width: 770px;
-    font-size: 33px;
-    line-height: 45px;
+    font-size: 20px !important;
+    line-height: 20px;
+  }
+  .main-content__wrap {
+    align-items: center;
   }
   .main-content-iframe {
     max-width: 580px;
@@ -1252,14 +1267,13 @@ footer .footer__copyright {
     margin-top: 10%;
   }
   .main__descr {
-    font-size: 21px;
     padding-right: 15px;
   }
   .--main-descr-option {
     max-width: 773px;
   }
   .main-list__descr {
-    font-size: 20px;
+    font-size: 27px;
     line-height: 1.3;
   }
   .main-list__item {
@@ -1297,7 +1311,7 @@ footer .footer__copyright {
     width: 100% !important;
   }
   .main .main__first-screen .main__content {
-    margin-top: 18rem;
+    margin-top: 28rem;
   }
   .progress-scroll {
     top: 50%;
