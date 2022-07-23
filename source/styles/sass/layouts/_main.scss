@@ -56,8 +56,8 @@
     font-family: $font;
     font-style: normal;
     font-weight: 500;
-    font-size: 38px;
-    line-height: 2;
+    font-size: 28px;
+    line-height: 1.4;
     color: $base;
 }
 .--option {
@@ -94,6 +94,7 @@
     position: relative;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     padding-top: 100px;
     .title--pos {
@@ -109,44 +110,10 @@
     font-weight: 700;
     font-size: 100px;
     margin-bottom: 20px;
-    color: $base;
-    opacity: 0.1;
+    text-align: center;
+    margin: 50px auto;
+    color: #ccc;
     z-index: 4;
-    position: absolute;
-    transform: translate(-50%, -50%);
-}
-
-.abstract1 {
-    left: 50%;
-    top: 180px;
-}
-.abstract2 {
-    left: 50%;
-    top: 4%;
-}
-.abstract3 {
-    left: 50%;
-    top: 5%;
-}
-.abstract5 {
-    left: 50%;
-    top: 10%;
-}
-.abstract6 {
-    left: 50%;
-    top: 10%;
-}
-.abstract7 {
-    left: 50%;
-    top: 10%;
-}
-.abstract8 {
-    left: 50%;
-    top: 10%;
-}
-.abstract9 {
-    left: 50%;
-    top: 10%;
 }
 
 .main__descr {
@@ -287,7 +254,7 @@
 }
 
 .main-list__item {
-    width: calc((100% - 40px) / 1);
+    width: calc((100% - 40px) / 3);
 }
 
 .main-list__title {
@@ -303,7 +270,7 @@
 
 // Pastor
 
-.--column-pos{
+.--column-pos {
     flex-direction: column;
 }
 
@@ -327,4 +294,12 @@
 
 #section8 {
     position: relative;
+}
+
+.wrapper-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }

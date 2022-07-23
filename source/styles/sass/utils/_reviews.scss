@@ -47,8 +47,8 @@
         .translate-row {
             width: 100px;
             position: absolute;
-            top: 50px;
-            left: 30px;
+            top: 0;
+            left: 0;
         }
         .header__top {
             display: flex;
@@ -96,6 +96,14 @@
         display: block;
     }
 
+    .wrap-content-service{
+        padding-top: 0;
+    }
+
+    .wrapper-main{
+        flex-direction: column;
+    }
+
     .main {
         margin: 0 auto;
         .main__first-screen {
@@ -104,7 +112,6 @@
             padding: 0;
             margin-top: 100px;
             padding-bottom: 0;
-            background: $accent-color;
             .main__content {
                 display: flex;
                 align-items: center;
@@ -124,6 +131,11 @@
             }
         }
     }
+
+    .main-list__item {
+        width: calc((100% - 40px) / 1);
+    }
+
     .main__first-title {
         position: relative;
         margin-left: 0;
@@ -140,6 +152,7 @@
         margin: 30px auto;
         max-width: 460px;
         padding-left: 10px;
+        overflow-y: hidden;
     }
     .sidepanel {
         display: none;
@@ -181,30 +194,9 @@
     }
 
     .abstract {
-        position: absolute;
         font-size: 40px;
     }
-    .abstract1 {
-        top: 40px;
-    }
-    .abstract2 {
-        top: 40px;
-    }
-    .abstract3 {
-        top: 40px;
-    }
-    .abstract5 {
-        top: 40px;
-    }
-    .abstract6 {
-        top: 40px;
-    }
-    .abstract7 {
-        top: 40px;
-    }
-    .abstract9 {
-        top: 60px;
-    }
+
     .title--pos {
         top: 0;
         left: 0;
@@ -215,12 +207,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 140px auto;
+        margin: 0 auto;
         padding-right: 0;
         .main__descr {
             font-size: 20px;
             line-height: 35px;
-            max-width: 500px;
+            max-width: 600px;
             padding: 22px;
             color: #ffffff;
         }
@@ -288,6 +280,21 @@
     // Bible
     .bible-iframe {
         width: 80vw;
+    }
+
+    // Slider
+
+    .swiper-slide img {
+        width: auto;
+        height: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: calc((20px) / 44 * 20) !important;
+    }
+    .swiper-pagination{
+        display: none;
     }
 }
 
@@ -365,8 +372,7 @@
             margin-top: 130px;
             flex-direction: column;
             .main__content {
-                background: #0b1d26;
-                height: 630px;
+                height: 530px;
                 justify-content: center;
                 align-items: flex-start;
                 margin-left: 50px;
@@ -415,6 +421,7 @@
             font-weight: 600;
             font-size: 25px;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .section {
@@ -445,28 +452,13 @@
         align-items: center !important;
         margin-bottom: 0;
         padding-left: 0;
-        padding-top: 200px;
+        padding-top: 0;
         .m--width {
             font-size: 30px !important;
             text-align: center;
         }
         .abstract {
-            opacity: 0.6;
-            top: 150px;
             font-size: 80px;
-        }
-        .abstract1 {
-            position: absolute;
-        }
-        .abstract2 {
-            position: absolute;
-        }
-        .abstract3 {
-            position: absolute;
-        }
-        .abstract6 {
-            position: absolute;
-            top: 70px;
         }
         .title--pos {
             margin: 50px 0;
@@ -502,6 +494,18 @@
         padding: 0 15px;
         font-size: 25px !important;
     }
+
+    // Slider
+
+    .swiper-slide img{
+        width: auto;
+        height: auto;
+    }
+    
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: calc((30px) / 44 * 420) !important;
+    }
 }
 
 // tablet to laptop L
@@ -522,6 +526,11 @@
         }
     }
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: calc((30px) / 44 * 520) !important;
+    }
+
     .main-content__wrap {
         align-items: center;
     }
@@ -536,7 +545,6 @@
     }
 
     .main__descr {
-        // font-size: 26px !important;
         padding-right: 15px;
     }
 
@@ -560,7 +568,7 @@
     .progress-scroll {
         right: 10px;
         top: 50%;
-        transform: translate(-50%, -40%);
+        transform: translate(-50%, -50%);
         .link--scroll {
             padding: 13px;
         }

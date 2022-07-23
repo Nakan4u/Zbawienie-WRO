@@ -37,6 +37,12 @@
         }
     }
     .translate-row {
-        width: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
+}
+
+.goog-logo-link{
+    color: white !important;
 }

@@ -8,7 +8,6 @@
 }
 
 .swiper-slide {
-    width: 1000px;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -31,6 +30,12 @@
     height: 20px;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
-    color: rgb(219, 207, 207);
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: white;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    width: calc((30px) / 44 * 500) !important;
 }
