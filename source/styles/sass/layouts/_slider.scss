@@ -18,6 +18,11 @@
     background-size: content;
 }
 
+.swiper-slide img {
+    width: auto;
+    height: 600px;
+}
+
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-left: 10px;
