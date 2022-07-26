@@ -1234,9 +1234,6 @@ footer .footer__copyright {
 .swiper-button-prev {
     width: 354.5454545455px !important;
   }
-  .main-content__wrap {
-    align-items: center;
-  }
   .main-content-iframe {
     max-width: 580px;
     padding-right: 70px;
@@ -1279,6 +1276,9 @@ footer .footer__copyright {
   }
   .main-content-left .title--pos {
     max-width: 470px;
+  }
+  .wrapper-main {
+    flex-direction: column;
   }
   .bible-iframe {
     width: 80vw;

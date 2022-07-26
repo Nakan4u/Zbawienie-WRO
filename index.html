@@ -439,7 +439,7 @@
                                 <li class="main-list__item">
                                     <h3 class="main-list__title">
                                         Чоловічий реабілітаційний центр підтримки та адаптації "Віфезда"
-                                    </h4>
+                                    </h3>
                                     <p class="main-list__descr">
                                         На базі нашої церкви функціонує реабілітаційний центр, що знаходиться у
                                         Хмельницькому районі, с.Печеськи. В будинку одночасно може знаходитись до 30
@@ -677,26 +677,29 @@
                 <div class="wrapper">
                     <div class="main-content-left">
                         <h2 class="abstract">Пожертви</h2>
-                        <div class="main-content__wrap">
-                            <p class="main__second-title m--width">
-                                Всі пожертвувані кошти будуть використані згідно статутної діяльності на підтримку та
-                                реалізацію служіння. Пожертви поверненню не підлягають, працюємо згідно статутної
-                                діяльності
-                            </p>
+                        <div class="wrapper-main">
+                            <div class="main-content__wrap">
+                                <p class="main__second-title m--width">
+                                    Всі пожертвувані кошти будуть використані згідно статутної діяльності на підтримку
+                                    та реалізацію служіння. Пожертви поверненню не підлягають, працюємо згідно статутної
+                                    діяльності
+                                </p>
 
-                            <p class="main__descr">
-                                💳 Ви можете підтримати служіння Християнської Церкви (Повного Євангелія) "Ранкова
-                                Зірка" зробивши внесок на карту
-                                <a class="main__descr-link" target="_blank" href="#">5169 3305 2117 6245</a>
-                            </p>
-                            <ul class="section-list">
-                                <li class="section-list-item">
-                                    <b>❗ Обов'язково вкажіть призначення: «Добровільні пожертвування».</b>
-                                </li>
-                            </ul>
+                                <p class="main__descr">
+                                    💳 Ви можете підтримати служіння Християнської Церкви (Повного Євангелія) "Ранкова
+                                    Зірка" зробивши внесок на карту
+                                    <a class="main__descr-link" target="_blank" href="#">5169 3305 2117 6245</a>
+                                </p>
+                                <ul class="section-list">
+                                    <li class="section-list-item">
+                                        <b>❗ Обов'язково вкажіть призначення: «Добровільні пожертвування».</b>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main__content-right">
+                                <div id="liqpay_checkout"></div>
+                            </div>
                         </div>
-                        <!-- <div class="main__content-right">
-                        </div> -->
                     </div>
                 </div>
             </section>
@@ -795,5 +798,26 @@
             type="text/javascript"
             src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
         ></script>
+        <script>
+            window.LiqPayCheckoutCallback = function () {
+                LiqPayCheckout.init({
+                    data: "eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJhbW91bnQiOjUsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiLQnNGW0Lkg0YLQvtCy0LDRgCIsInB1YmxpY19rZXkiOiJpMzI0MTM3OTE5MDQiLCJsYW5ndWFnZSI6InJ1In0=",
+                    signature: "TrmwPPMcH0UH+n5aZdeSxpUtigc=",
+                    embedTo: "#liqpay_checkout",
+                    mode: "embed", // embed || popup,
+                })
+                    .on("liqpay.callback", function (data) {
+                        console.log(data.status)
+                        console.log(data)
+                    })
+                    .on("liqpay.ready", function (data) {
+                        // ready
+                    })
+                    .on("liqpay.close", function (data) {
+                        // close
+                    })
+            }
+        </script>
+        <script src="//static.liqpay.ua/libjs/checkout.js" async></script>
     </body>
 </html>
