@@ -96,11 +96,11 @@
         display: block;
     }
 
-    .wrap-content-service{
+    .wrap-content-service {
         padding-top: 0;
     }
 
-    .wrapper-main{
+    .wrapper-main {
         flex-direction: column;
     }
 
@@ -293,7 +293,7 @@
     .swiper-button-prev {
         width: calc((20px) / 44 * 20) !important;
     }
-    .swiper-pagination{
+    .swiper-pagination {
         display: none;
     }
 }
@@ -497,14 +497,18 @@
 
     // Slider
 
-    .swiper-slide img{
+    .swiper-slide img {
         width: auto;
         height: auto;
     }
-    
+
     .swiper-button-next,
     .swiper-button-prev {
         width: calc((30px) / 44 * 420) !important;
+    }
+
+    #liqpay_checkout {
+        margin-top: 50px;
     }
 }
 
@@ -582,7 +586,7 @@
         }
     }
 
-    .wrapper-main{
+    .wrapper-main {
         flex-direction: column;
     }
 
