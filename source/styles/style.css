@@ -1288,6 +1288,7 @@ footer .footer__copyright {
   }
   .wrapper-main {
     flex-direction: column;
+    width: 70%;
   }
   .bible-iframe {
     width: 80vw;
