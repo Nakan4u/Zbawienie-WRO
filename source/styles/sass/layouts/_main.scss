@@ -167,25 +167,25 @@
                 color: white;
                 fill: currentColor;
                 transition: color 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-            }
-            .icon-instagram:hover {
-                color: #e19a30;
+                :hover {
+                    color: #e19a30;
+                }
             }
             .icon-youtube {
                 color: white;
                 fill: currentColor;
                 transition: color 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-            }
-            .icon-youtube:hover {
-                color: red;
+                :hover {
+                    color: red;
+                }
             }
             .icon-facebook {
                 color: white;
                 fill: currentColor;
                 transition: color 2s cubic-bezier(0.165, 0.84, 0.44, 1);
-            }
-            .icon-facebook:hover {
-                color: blue;
+                :hover {
+                    color: blue;
+                }
             }
         }
         .social__link {
@@ -307,5 +307,5 @@
 #liqpay_checkout {
     margin-top: 50px;
     width: 500px;
-    background-color:white;
+    background-color: white;
 }
