@@ -1,5 +1,5 @@
 .new-section-preview {
-  margin: 111px auto;
+  margin: 1rem auto;
 }
 
 .new-section-preview-list {
@@ -7,7 +7,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
-  background: #2b2a2a69;
+  // background: #2b2a2a69;
+  padding: 0 50px;
 }
 
 .new-section-preview-list__wrap {
@@ -17,6 +18,7 @@
   background: transparent;
 
   video {
+    width: fit-content;
     border-radius: 37px;
   }
 }
