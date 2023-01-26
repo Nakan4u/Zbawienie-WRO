@@ -1,0 +1,36 @@
+.new-section-preview {
+  margin: 111px auto;
+}
+
+.new-section-preview-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  background: #2b2a2a69;
+}
+
+.new-section-preview-list__wrap {
+  display: flex;
+  justify-content: center;
+  filter: opacity(0.8);
+  background: transparent;
+
+  video {
+    border-radius: 37px;
+  }
+}
+
+.new-section-preview-list__item {
+  width: 700px;
+  h2 {
+    margin-bottom: 50px;
+    font-size: 34px;
+    color: white;
+    text-shadow: -5px 5px 5px #27181d;
+  }
+  p {
+    font-size: 28px;
+    text-shadow: -2px 3px 5px black;
+  }
+}
