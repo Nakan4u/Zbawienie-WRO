@@ -623,7 +623,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row-reverse;
-  padding: 0 50px;
+  padding: 0 20px;
 }
 
 .new-section-preview-list__wrap {
@@ -1085,8 +1085,6 @@ footer .footer__copyright {
     width: 70%;
   }
   .--addition-mob {
-    background: #0b1d26;
-    padding: 0 20px;
     margin: 0 auto;
     text-align: left;
   }
