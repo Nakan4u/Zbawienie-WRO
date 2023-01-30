@@ -152,7 +152,7 @@
         margin: 30px auto;
         max-width: 460px;
         padding-left: 10px;
-        overflow-y: hidden;
+        // overflow-y: hidden;
     }
 
     .main-second__list-link {
@@ -342,7 +342,7 @@
         display: none;
     }
     .header {
-        margin-bottom: 30%;
+        margin-bottom: 10%;
         .translate-row {
             position: absolute;
             left: 30px;
@@ -441,13 +441,14 @@
         }
         .main__second-title {
             max-width: fit-content;
-            margin: 30px auto;
-            padding: 0 25px;
-            text-align: justify;
+            margin: 10px 0;
+            // padding: 0 25px;
+            padding: 0;
+            // text-align: justify;
             font-weight: 600;
             font-size: 25px;
             line-height: 1.6;
-            overflow-x: hidden;
+            // overflow-x: hidden;
         }
 
         .section {
@@ -481,7 +482,7 @@
         padding-top: 0;
         .m--width {
             font-size: 30px !important;
-            text-align: center;
+            // text-align: center;
         }
         .abstract {
             font-size: 80px;
@@ -507,6 +508,11 @@
             text-align: center;
             align-items: center;
         }
+    }
+
+    .main-content-left .wrapper-main {
+        display: flex;
+        flex-direction: column;
     }
 
     // Bible
@@ -613,8 +619,10 @@
     }
 
     .wrapper-main {
+        display: flex;
         flex-direction: column;
         width: 70%;
+        flex-wrap: wrap;
     }
 
     // Bible
