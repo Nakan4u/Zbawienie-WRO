@@ -939,13 +939,16 @@ footer .footer__copyright {
     right: 0;
   }
   .main__second-title {
-    font-size: 30px;
+    font-size: 22px;
     line-height: 44px;
     color: #ffffff;
     margin: 30px auto;
     max-width: 460px;
     padding-left: 10px;
     overflow-y: hidden;
+  }
+  .main-second__list-link {
+    margin-left: 10px;
   }
   .sidepanel {
     display: none;
@@ -971,7 +974,7 @@ footer .footer__copyright {
     margin-left: 30px;
   }
   #section1 {
-    margin-top: 2% !important;
+    margin-top: 8rem !important;
   }
   #section2 {
     padding-top: 0;
