@@ -152,7 +152,6 @@
         margin: 30px auto;
         max-width: 460px;
         padding-left: 10px;
-        // overflow-y: hidden;
     }
 
     .main-second__list-link {
@@ -322,6 +321,48 @@
     .new-section-preview-list__item {
         width: 100%;
     }
+
+    // Пожертви
+
+    .main-content__item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        a {
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .main__second-title {
+        text-align: center;
+    }
+
+    .main-second__list-link {
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .number-privat {
+        cursor: pointer;
+    }
+
+    .section-list-item {
+        b {
+            font-size: 20px;
+        }
+    }
 }
 
 // tablet to laptop
@@ -482,7 +523,6 @@
         padding-top: 0;
         .m--width {
             font-size: 30px !important;
-            // text-align: center;
         }
         .abstract {
             font-size: 80px;
@@ -541,6 +581,53 @@
 
     #liqpay_checkout {
         margin-top: 50px;
+    }
+
+    // Пожертви
+
+    .main-content__item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        a {
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .main__second-title {
+        text-align: center;
+    }
+
+    .main .main__second-title {
+        max-width: initial;
+        margin: 0;
+    }
+
+    .main-second__list-link {
+        margin-left: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .number-privat {
+        cursor: pointer;
+    }
+
+    .section-list-item {
+        b {
+            font-size: 25px;
+        }
     }
 }
 
