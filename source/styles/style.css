@@ -1436,6 +1436,9 @@ footer .footer__copyright {
   .bible-iframe {
     width: 80vw;
   }
+  .new-section-preview-list__item {
+    width: 44%;
+  }
 }
 @media (min-width: 1441px) and (max-width: 2560px) {
   .wrapper {
