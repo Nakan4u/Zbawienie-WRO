@@ -317,3 +317,12 @@
     width: 500px;
     background-color: white;
 }
+
+
+.menu__block__inline, .menu__block__list{
+    justify-content: unset;
+}
+
+.container__block__all{
+    max-width: 366px !important;
+}
