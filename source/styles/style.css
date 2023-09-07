@@ -20,7 +20,6 @@ body {
   min-height: -moz-max-content;
   min-height: max-content;
   font-family: "Cairo", sans-serif;
-  background-size: cover;
 }
 
 html {
@@ -1138,6 +1137,9 @@ footer .footer__copyright {
   }
   #liqpay_checkout {
     width: 100%;
+  }
+  .goog-te-gadget {
+    width: 30%;
   }
 }
 @media (min-width: 769px) and (max-width: 1240px) {
