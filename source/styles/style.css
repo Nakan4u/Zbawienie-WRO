@@ -274,14 +274,12 @@ nav {
   position: relative;
   width: 100%;
   padding: 0;
-  margin-top: 13rem;
 }
 .main .main__first-screen .main__content {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   align-items: center;
-  margin-top: 16rem;
 }
 .main .main__first-screen .main__content .main__content-right img {
   max-width: 100%;
@@ -734,9 +732,9 @@ nav {
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-left: 10px;
-  background: rgb(214, 210, 210);
-  width: 20px;
-  height: 20px;
+  background: rgb(135, 130, 130);
+  width: 10px;
+  height: 10px;
 }
 
 .swiper-button-next:after,
@@ -1447,7 +1445,7 @@ footer .footer__copyright {
     width: 100% !important;
   }
   .main .main__first-screen .main__content {
-    margin-top: 28rem;
+    margin-top: 12rem;
   }
   .progress-scroll {
     top: 50%;
