@@ -1,7 +1,7 @@
 // section
 
 .section {
-    margin-top: 6%;
+    margin-top: 6rem;
     align-items: center;
     height: auto;
     display: flex;
@@ -10,6 +10,10 @@
     .section--reverse {
         display: flex;
     }
+}
+
+#section2 {
+    margin-top: 15rem;
 }
 
 .content-wrap {

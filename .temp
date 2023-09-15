@@ -1,0 +1,42 @@
+  <!-- new section preview -->
+    <!-- <div class="new-section-preview">
+        <ul class="new-section-preview-list">
+            <li class="new-section-preview-list__item">
+                <div class="new-section-preview-list__wrap">
+                    <video class="" width="400" height="50%" src="./source/img/video/new-church-building.mp4" controls
+                        autobuffer></video>
+                </div>
+            </li>
+
+            <li class="new-section-preview-list__item --addition-mob">
+                <h2>Запрошуємо Вас стати частиною нашого бачення на 2023 рік - придбання власної будівлі для Церкви!
+                </h2>
+                <p>
+                    У цей непростий час ми бачимо необхідність у тому щоб якомога швидше вийти з орендованих
+                    приміщень і
+                    мати свій Дім. Дім, де знедолені знайдуть прихисток та отримають необхідну допомогу; Дім, де
+                    будуть
+                    зростати наші діти, розвиваючи свої дари і таланти; Дім, де ми можемо розмістити всі наші
+                    проекти та
+                    офіси в одній локації і робити нашу працю ефективніше і потужніше; Дім, наповнений Божою славою
+                    та
+                    присутністю!
+                    Якщо Бог торкається Вашого серця і Ви хочете допомогти нам в придбанні Храму, в якому Церква
+                    Божа зможе
+                    збиратись щоб славити Господа, а також служити людям, що потребують допомоги, то запрошуємо Вас
+                    долучитись до збору фінансів для купівлі Храму.
+                </p>
+            </li>
+        </ul>
+
+
+    </div> -->
+
+    <!-- <div class="margin: 0 auto; backdrop-filter: blur(8px);">
+        <div style="width: 100%; 
+                    height: 180rem;
+                    margin: 0 auto;
+            " data-vide-bg="./source/img/video/new-church-building.mp4"
+            data-vide-options="loop: true, muted: true, position: 0% 0%">
+        </div>
+    </div> -->
