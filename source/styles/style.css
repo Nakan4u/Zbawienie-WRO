@@ -30,7 +30,7 @@ html {
   --scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-       text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 a {
@@ -176,7 +176,7 @@ img {
   justify-content: space-evenly;
   flex-direction: column;
   -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   transform: translateX(-100%);
   transition: transform 0.5s;
   -webkit-transform: translateX(-100%);
@@ -486,7 +486,7 @@ nav {
   margin-top: 20px;
   max-width: 1050px;
   -moz-columns: 1;
-       columns: 1;
+  columns: 1;
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -572,7 +572,8 @@ nav {
   background-color: white;
 }
 
-.menu__block__inline, .menu__block__list {
+.menu__block__inline,
+.menu__block__list {
   justify-content: unset;
 }
 
@@ -1074,6 +1075,7 @@ footer .footer__copyright {
   }
   footer .footer__copyright {
     margin: 20px 0 20px;
+    text-align: -webkit-center;
   }
   .bible-iframe {
     width: 80vw;
@@ -1468,7 +1470,7 @@ footer .footer__copyright {
 .backToTopBtn {
   position: fixed;
   bottom: 50px;
-  right: 50px;
+  left: 30px;
   z-index: 1;
   height: 50px;
   width: 50px;
@@ -1481,9 +1483,11 @@ footer .footer__copyright {
 }
 .backToTopBtn:not(:hover) {
   background: #1f1f1f;
+  background: #795548ed;
 }
 .backToTopBtn:hover {
   background: #0f0f0f;
+  background: #936757;
 }
 .backToTopBtn.active {
   visibility: visible;

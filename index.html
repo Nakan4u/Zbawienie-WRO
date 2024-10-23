@@ -21,11 +21,7 @@
     <meta property="og:site_name" content="Ранкова Зірка" />
     <link rel="icon" href="/source/img/favicon.png" type="image/svg+xml">
 
-    <!-- Font Awesome icon -->
-    <script src="https://kit.fontawesome.com/80bacdb160.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="./source/styles/style.css" />
-    <!-- <link rel="stylesheet" href="./source/styles/media.css" /> -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -34,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <title>Ранкова Зірка</title>
 
-    
+
 </head>
 
 <style>
@@ -689,9 +685,10 @@
         </section>
 
         <button class="backToTopBtn"><i class="fas fa-angle-up"></i></button>
+
     </main>
 
-    <footer id="section10" class="footer">
+    <footer class="footer" id="section10">
         <div class="wrapper footer__categories">
             <ul class="category">
                 <li data-aos="fade-right" class="category-item">
@@ -719,21 +716,24 @@
                 </li>
             </ul>
             <div id="down" class="footer-bottom">
-                <p class="footer__copyright">&#9400; "Ранкова Зірка" Хмельницький, 2017—2022</p>
+                <p class="footer__copyright">
+                    &#9400; "Ранкова Зірка" Хмельницький, 2017—<span id="current-year"></span>
+                </p>
+
+                <script>
+                    const currentYear = new Date().getFullYear();
+                    document.getElementById('current-year').textContent = currentYear;
+                </script>
+
             </div>
         </div>
     </footer>
-
-    <!-- <script src="./source/js/hamburger.js"></script>
-    <script src="./jquery-3.6.0.min.js"></script>
-    <script src="./source/js/slider.js"></script> -->
-
-    <script src="./source/js/index.js"></script>
 
     <script>
         AOS.init()
     </script>
 
+    <!-- LiqPayCheckoutCallback  -->
     <script>
         window.LiqPayCheckoutCallback = function () {
             LiqPayCheckout.init({
@@ -754,35 +754,20 @@
                 })
         }
     </script>
+
+    <!-- Scripts  -->
     <script src="//static.liqpay.ua/libjs/checkout.js" async></script>
 
-    <script>
-        // Получаем все навигационные ссылки
-        const navLinks = document.querySelectorAll(".header__nav-link");
+    <script src="./source/js/btn-top.js"></script>
+    <script src="./source/js/hamburger.js"></script>
+    <script src="./source/js/slider.js"></script>
+    <script src="./source/js/highlightActiveNavLink.js"></script>
 
-        // Функция для обновления активной навигационной ссылки при скролле
-        function updateActiveNavLink() {
-            const fromTop = window.scrollY + 4;
 
-            navLinks.forEach((navLink) => {
-                const sectionId = navLink.getAttribute("href").substring(1);
-                const section = document.getElementById(sectionId);
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/80bacdb160.js" crossorigin="anonymous"></script>
 
-                if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-                    navLink.classList.add("active");
-                } else {
-                    navLink.classList.remove("active");
-                }
-            });
-        }
-
-        // Слушаем событие скролла страницы и обновляем активную навигационную ссылку
-        window.addEventListener("scroll", updateActiveNavLink);
-
-        // Вызываем функцию обновления активной навигационной ссылки при загрузке страницы
-        window.addEventListener("load", updateActiveNavLink);
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </body>
 
 </html>
