@@ -19,26 +19,22 @@
     <meta property="og:image" content="/source/img/banner.png" />
     <meta property="og:url" content="ссылка на страницу" />
     <meta property="og:site_name" content="Ранкова Зірка" />
-    <link rel="icon" sizes="32x32"
-        href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link rel="icon" sizes="192x192"
-        href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png fit=192%2C192" />
-    <link type="image/png" sizes="16x16" rel="icon"
-        href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link type="image/png" sizes="32x32" rel="icon"
-        href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link type="image/png" sizes="96x96" rel="icon"
-        href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
-    <link type="image/png" sizes="120x120" rel="icon"
-        href="https://i2.wp.com/rankova-zirka.com/wp-content/uploads/2021/07/cropped-Square-2.png?fit=32%2C32" />
+    <link rel="icon" href="/source/img/favicon.png" type="image/svg+xml">
+
+    <!-- Font Awesome icon -->
+    <script src="https://kit.fontawesome.com/80bacdb160.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./source/styles/style.css" />
-    <link rel="stylesheet" href="./source/styles/media.css" />
+    <!-- <link rel="stylesheet" href="./source/styles/media.css" /> -->
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <title>Ранкова Зірка</title>
+
+    
 </head>
 
 <style>
@@ -691,6 +687,8 @@
                 </div>
             </div>
         </section>
+
+        <button class="backToTopBtn"><i class="fas fa-angle-up"></i></button>
     </main>
 
     <footer id="section10" class="footer">
@@ -725,18 +723,17 @@
             </div>
         </div>
     </footer>
-    <script src="./source/js/hamburger.js"></script>
+
+    <!-- <script src="./source/js/hamburger.js"></script>
     <script src="./jquery-3.6.0.min.js"></script>
-    <script src="./source/js/slider.js"></script>
+    <script src="./source/js/slider.js"></script> -->
+
+    <script src="./source/js/index.js"></script>
+
     <script>
         AOS.init()
     </script>
-    <!-- <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({ pageLanguage: "uk" }, "google_translate_element")
-        }
-    </script> -->
-    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+
     <script>
         window.LiqPayCheckoutCallback = function () {
             LiqPayCheckout.init({
@@ -758,10 +755,6 @@
         }
     </script>
     <script src="//static.liqpay.ua/libjs/checkout.js" async></script>
-
-
-    <!-- <script src="./source/js/jquery.vide.min.js"></script> -->
-
 
     <script>
         // Получаем все навигационные ссылки

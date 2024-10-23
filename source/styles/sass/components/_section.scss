@@ -1,3 +1,5 @@
+@use '../utils/variables';
+
 // section
 
 .section {
@@ -43,5 +45,5 @@
 
 .section-address:hover,
 .section-address:focus {
-    color: $primary;
+    color: variables.$primary;
 }

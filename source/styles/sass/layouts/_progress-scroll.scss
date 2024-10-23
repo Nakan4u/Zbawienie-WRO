@@ -1,3 +1,5 @@
+@use '../utils/variables';
+
 .progress-scroll {
     z-index: 3;
     position: fixed;
@@ -26,19 +28,19 @@
         height: auto;
         left: 0px;
         top: 0;
-        background: $base;
+        background: variables.$base;
         opacity: 1;
     }
 }
 
 .social__link:hover,
 .social__link:focus {
-    color: $primary !important;
+    color: variables.$primary !important;
 }
 
 .link--scroll:hover,
 .link--scroll:focus,
 .translate-link:hover,
 .translate-link:focus {
-    color: $primary;
+    color: variables.$primary;
 }

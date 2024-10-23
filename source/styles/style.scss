@@ -1,13 +1,12 @@
-@import './sass/utils/variables';
-
-@import './sass/base/common';
-
-@import './sass/layouts/header';
-@import './sass/layouts/menu';
-@import './sass/layouts/main';
-@import './sass/components/section';
-@import './sass/components/new-section';
-@import './sass/layouts/progress-scroll';
-@import './sass/layouts/slider';
-@import './sass/layouts/footer';
-@import './sass/utils/reviews';
+@use './sass/utils/variables';
+@use './sass/base/common';
+@use './sass/layouts/header';
+@use './sass/layouts/menu';
+@use './sass/layouts/main';
+@use './sass/components/section';
+@use './sass/components/new-section';
+@use './sass/layouts/progress-scroll';
+@use './sass/layouts/slider';
+@use './sass/layouts/footer';
+@use './sass/utils/reviews';
+@use './sass/utils/backToTopBtn';
