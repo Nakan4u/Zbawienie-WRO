@@ -25,7 +25,8 @@ gulp.task("scss", function() {
 // Watch task to automatically compile SCSS when changes are made
 gulp.task("watch", function () {
     gulp.watch("./source/styles/**/*.scss", gulp.series('scss'));
+    gulp.watch("./source/html/*.html", gulp.series('html'));
 });
 
 // Default task to run both the compile and watch task
-gulp.task('default', gulp.series('scss', 'watch'));
+gulp.task('default', gulp.series('html', 'scss', 'watch'));
