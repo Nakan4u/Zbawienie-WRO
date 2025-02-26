@@ -1,48 +1,58 @@
+@use "../utils/variables";
+
 // Header
 .header {
-    width: 100%;
-    .header__top {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-evenly;
-        .header__nav {
-            width: 1500px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-top: 70px;
-            position: relative;
-            .header__nav-link {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 22px;
-                padding: 15px 15px;
-                margin-right: 40px;
-                &:hover {
-                    text-decoration: underline;
-                    color: rgb(217, 209, 209);
-                }
-            }
+  width: 100%;
+
+  .header__top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+
+    .header__nav {
+      width: 1500px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 70px;
+      position: relative;
+
+      .header__nav-link {
+        color: variables.$primary;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 15px 15px;
+        margin-right: 40px;
+
+        &:hover {
+          text-decoration: underline;
+          color: variables.$base;
         }
-        .header__nav-logo {
-            display: inline;
-            width: 16rem;
-            margin-left: 50px;
-        }
-        .header__nav-logo-mobile {
-            display: none;
-            width: 16rem;
-            margin-left: 50px;
-        }
+      }
     }
-    .translate-row {
-        position: absolute;
-        top: 0;
-        right: 0;
+
+    .header__nav-logo {
+      display: inline;
+      width: 16rem;
+      margin-left: 50px;
     }
+
+    .header__nav-logo-mobile {
+      display: none;
+      width: 16rem;
+      margin-left: 50px;
+    }
+  }
+
+  .translate-row {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
-.goog-logo-link{
-    color: white !important;
+.goog-logo-link {
+  color: white !important;
 }
