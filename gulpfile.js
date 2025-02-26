@@ -19,7 +19,7 @@ gulp.task("scss", function() {
         .src("./source/styles/style.scss")
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(concat('style.css'))
-        .pipe(gulp.dest("./source/styles/"));
+        .pipe(gulp.dest("./"));
 });
 
 // Watch task to automatically compile SCSS when changes are made
