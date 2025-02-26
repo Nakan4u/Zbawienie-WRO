@@ -130,7 +130,7 @@
   margin-bottom: 20px;
   text-align: center;
   margin: 50px auto;
-  color: variables.$primary;
+  color: variables.$base;
   z-index: 4;
 }
 
@@ -142,7 +142,7 @@
   font-size: 22px;
   line-height: 1.4;
   max-width: 575px;
-  color: variables.$base;
+  color: variables.$primary;
 
   .main__descr-link {
     display: inline-block;
