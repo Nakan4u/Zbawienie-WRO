@@ -1,765 +1,755 @@
 @mixin mobile {
-    @media (min-width: 0px) and (max-width: 768px) {
-        @content;
-    }
+  @media (min-width: 0px) and (max-width: 768px) {
+    @content;
+  }
 }
 @mixin tablet {
-    @media (min-width: 769px) and (max-width: 1240px) {
-        @content;
-    }
+  @media (min-width: 769px) and (max-width: 1240px) {
+    @content;
+  }
 }
 @mixin laptop {
-    @media (min-width: 1241px) and (max-width: 1440px) {
-        @content;
-    }
+  @media (min-width: 1241px) and (max-width: 1440px) {
+    @content;
+  }
 }
 @mixin desktop {
-    @media (min-width: 1441px) and (max-width: 2560px) {
-        @content;
-    }
+  @media (min-width: 1441px) and (max-width: 2560px) {
+    @content;
+  }
 }
 
 // mobile
 @include mobile {
-    html {
-        width: 100% !important;
-        background-size: cover;
+  html {
+    width: 100% !important;
+    background-size: cover;
+  }
+  body {
+    background-size: auto;
+  }
+  // for hidden items
+  .hidden-item {
+    visibility: hidden;
+  }
+  .wrapper {
+    width: 100% !important;
+    overflow-x: hidden;
+  }
+  .progress-scroll {
+    display: none;
+  }
+  .sidepanel {
+    display: none;
+  }
+  .header {
+    margin-bottom: 10%;
+    .translate-row {
+      width: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
-    body {
-        background-size: auto;
-    }
-    // for hidden items
-    .hidden-item {
-        visibility: hidden;
-    }
-    .wrapper {
-        width: 100% !important;
-        overflow-x: hidden;
-    }
-    .progress-scroll {
+    .header__top {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      .header__nav {
         display: none;
-    }
-    .sidepanel {
-        display: none;
-    }
-    .header {
-        margin-bottom: 10%;
-        .translate-row {
-            width: 100px;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        .header__top {
-            display: flex;
-            width: 100%;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 30px;
-            .header__top-link {
-                display: none;
-            }
-            .header__nav {
-                display: none;
-                align-items: center;
-                margin-top: 30px;
-                justify-content: center;
-                position: relative;
-                align-content: center;
-                flex-wrap: wrap;
-                width: 80%;
-                .header__nav-link {
-                    font-size: 18px;
-                    padding: 15px 30px;
-                    margin: 0 auto;
-                }
-            }
-        }
-    }
-    .header .header__top .header__nav-logo-mobile {
-        width: 100px !important;
-        margin-left: 0;
-        margin: 0 auto;
-        display: inline-block;
-    }
-
-    .header .header__top .header__top-link {
-        display: none;
-    }
-
-    // BURGER MENU
-    .menu-wrap {
-        display: block;
-    }
-
-    #hamburger {
-        display: block;
-    }
-
-    .wrap-content-service {
-        padding-top: 0;
-    }
-
-    .wrapper-main {
-        flex-direction: column;
-    }
-
-    .main {
-        margin: 0 auto;
-        .main__first-screen {
-            position: relative;
-            width: 100%;
-            padding: 0;
-            margin-top: 100px;
-            padding-bottom: 0;
-            .main__content {
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                width: 100%;
-                justify-content: center;
-                margin-left: 0 !important;
-                padding-top: 50px;
-                margin: 0 auto !important;
-                .main__content-right {
-                    margin: 0 auto;
-                    img {
-                        width: 340px !important;
-                        height: auto;
-                    }
-                }
-            }
-        }
-    }
-
-    .main-list__item {
-        width: calc((100% - 40px) / 1);
-    }
-
-    .main__first-title {
+        align-items: center;
+        margin-top: 30px;
+        justify-content: center;
         position: relative;
-        margin-left: 0;
-        font-size: 18px;
-        line-height: 22px;
-        letter-spacing: 6px;
-        color: #fbd784;
-        right: 0;
-    }
-    .main__second-title {
-        font-size: 22px;
-        line-height: 44px;
-        color: #ffffff;
-        margin: 30px auto;
-        max-width: 460px;
-        padding-left: 10px;
-    }
-
-    .main-second__list-link {
-        margin-left: 10px;
-    }
-
-    .sidepanel {
-        display: none;
-        position: fixed;
-        z-index: 3;
-        top: 394px;
-        left: 0;
-        margin-left: 50px;
-    }
-
-    .section {
-        margin-top: 20px;
-        .section--reverse {
-            display: flex;
-            flex-direction: column;
-            margin-left: auto;
-            margin-top: 60px;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        .header__nav-link {
+          font-size: 18px;
+          padding: 15px 30px;
+          margin: 0 auto;
         }
+      }
     }
-    .section__read-more {
-        margin: 50px 0 50px 0;
-        .read-more {
-            margin-left: 30px;
-        }
-    }
-    #section1 {
-        margin-top: 8rem !important;
-    }
-    #section2 {
-        padding-top: 0;
-        padding-bottom: 0;
-        background: #0b1d26;
-    }
-    .main-content-left {
-        flex-direction: column;
-        padding-top: 0;
+  }
+  .header .header__top .header__nav-logo-mobile {
+    width: 100px !important;
+    margin-left: 0;
+    margin: 0 auto;
+    display: inline-block;
+  }
+
+  // BURGER MENU
+  .menu-wrap {
+    display: block;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .wrap-content-service {
+    padding-top: 0;
+  }
+
+  .wrapper-main {
+    flex-direction: column;
+  }
+
+  .main {
+    margin: 0 auto;
+    .main__first-screen {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      margin-top: 100px;
+      padding-bottom: 0;
+      .main__content {
         display: flex;
         align-items: center;
-    }
-
-    .abstract {
-        font-size: 40px;
-    }
-
-    .title--pos {
-        top: 0;
-        left: 0;
-    }
-
-    .main-content__wrap {
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        padding-right: 0;
-        .main__descr {
-            font-size: 20px;
-            line-height: 35px;
-            max-width: 600px;
-            padding: 22px;
-            color: #ffffff;
-        }
-    }
-    .main-list {
-        overflow-y: hidden;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        .main-list-item {
-            & {
-                font-size: 23px;
-            }
-        }
-        .main-list__descr {
-            margin-bottom: 30px;
-            font-size: 21px;
-        }
-    }
-
-    .main-content-iframe {
-        width: 88vw;
-    }
-
-    footer {
-        margin-top: 25px;
-        background: #0b1d26;
-        display: flex;
-        height: auto;
         width: 100%;
-        align-items: center;
-        flex-grow: 0;
-        padding: 0px;
-        flex-direction: column;
-        .footer__logo {
-            width: 30%;
-            margin: auto;
-        }
-        .footer__copyright {
-            margin: 50px 0 50px;
-        }
-    }
-    .footer__container {
-        flex-direction: column;
-        .footer__categories {
-            flex-direction: column;
-            align-items: center;
-        }
-    }
-    .category {
-        margin: 0 auto;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        .category-item {
-            align-items: center;
-        }
-    }
-    .footer-bottom {
-        margin: 10px 0 10px;
-    }
-    footer .footer__copyright {
-        margin: 20px 0 20px;
-    }
-    // Bible
-    .bible-iframe {
-        width: 80vw;
-    }
-
-    // Slider
-
-    .swiper-slide img {
-        width: auto;
-        height: auto;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        width: calc((20px) / 44 * 20) !important;
-    }
-    .swiper-pagination {
-        display: none;
-    }
-
-    .new-section-preview-list {
-        display: flex;
         justify-content: center;
-        flex-direction: column;
-    }
-
-    .new-section-preview-list__wrap {
-        video {
-            width: 70%;
+        margin-left: 0 !important;
+        padding-top: 50px;
+        margin: 0 auto !important;
+        .main__content-right {
+          margin: 0 auto;
+          img {
+            width: 340px !important;
+            height: auto;
+          }
         }
+      }
     }
+  }
 
-    .--addition-mob {
-        margin: 0 auto;
-        text-align: left;
+  .main-list__item {
+    width: calc((100% - 40px) / 1);
+  }
+
+  .main__first-title {
+    position: relative;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 6px;
+    color: #fbd784;
+    right: 0;
+  }
+  .main__second-title {
+    font-size: 22px;
+    line-height: 44px;
+    color: #ffffff;
+    margin: 30px auto;
+    max-width: 460px;
+    padding-left: 10px;
+  }
+
+  .main-second__list-link {
+    margin-left: 10px;
+  }
+
+  .sidepanel {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 394px;
+    left: 0;
+    margin-left: 50px;
+  }
+
+  .section {
+    margin-top: 20px;
+    .section--reverse {
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-top: 60px;
     }
-
-    .new-section-preview-list__item {
-        width: 100%;
+  }
+  .section__read-more {
+    margin: 50px 0 50px 0;
+    .read-more {
+      margin-left: 30px;
     }
+  }
+  #section1 {
+    margin-top: 8rem !important;
+  }
+  #section2 {
+    padding-top: 0;
+    padding-bottom: 0;
+    background: #0b1d26;
+  }
+  .main-content-left {
+    flex-direction: column;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+  }
 
-    // Пожертви
+  .abstract {
+    font-size: 40px;
+  }
 
-    .main-content__item {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        a {
-            display: flex;
-            flex-direction: column;
-        }
-        p {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
+  .title--pos {
+    top: 0;
+    left: 0;
+  }
+
+  .main-content__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-right: 0;
+    .main__descr {
+      font-size: 20px;
+      line-height: 35px;
+      max-width: 600px;
+      padding: 22px;
+      color: #ffffff;
     }
-
-    .main__second-title {
-        text-align: center;
+  }
+  .main-list {
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .main-list-item {
+      & {
+        font-size: 23px;
+      }
     }
-
-    .main-second__list-link {
-        margin-left: 0;
-        padding: 0;
-        text-align: center;
+    .main-list__descr {
+      margin-bottom: 30px;
+      font-size: 21px;
     }
+  }
 
-    .number-privat {
-        cursor: pointer;
+  .main-content-iframe {
+    width: 88vw;
+  }
+
+  footer {
+    margin-top: 25px;
+    background: #0b1d26;
+    display: flex;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    flex-grow: 0;
+    padding: 0px;
+    flex-direction: column;
+    .footer__logo {
+      width: 30%;
+      margin: auto;
     }
-
-    .section-list-item {
-        b {
-            font-size: 20px;
-        }
+    .footer__copyright {
+      margin: 50px 0 50px;
     }
-
-    // PAY
-
-    #liqpay_checkout {
-        width: 100%;
+  }
+  .footer__container {
+    flex-direction: column;
+    .footer__categories {
+      flex-direction: column;
+      align-items: center;
     }
-
-    // google-translate
-
-    .goog-te-gadget{
-        width: 30%;
+  }
+  .category {
+    margin: 0 auto;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    .category-item {
+      align-items: center;
     }
+  }
+  .footer-bottom {
+    margin: 10px 0 10px;
+  }
+  footer .footer__copyright {
+    margin: 20px 0 20px;
+  }
+  // Bible
+  .bible-iframe {
+    width: 80vw;
+  }
+
+  // Slider
+
+  .swiper-slide img {
+    width: auto;
+    height: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: calc((20px) / 44 * 20) !important;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+
+  .new-section-preview-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .new-section-preview-list__wrap {
+    video {
+      width: 70%;
+    }
+  }
+
+  .--addition-mob {
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .new-section-preview-list__item {
+    width: 100%;
+  }
+
+  // Пожертви
+
+  .main-content__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    a {
+      display: flex;
+      flex-direction: column;
+    }
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .main__second-title {
+    text-align: center;
+  }
+
+  .main-second__list-link {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .number-privat {
+    cursor: pointer;
+  }
+
+  .section-list-item {
+    b {
+      font-size: 20px;
+    }
+  }
+
+  // PAY
+
+  #liqpay_checkout {
+    width: 100%;
+  }
+
+  // google-translate
+
+  .goog-te-gadget {
+    width: 30%;
+  }
 }
 
 // tablet to laptop
 @include tablet {
-    .wrapper {
-        width: 100% !important;
-        overflow-x: hidden !important;
+  .wrapper {
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  // for hidden items
+  .hidden-item {
+    visibility: hidden;
+  }
+  body {
+    margin: 0 auto;
+    background-size: auto;
+  }
+  .progress-scroll {
+    display: none;
+  }
+  .header {
+    margin-bottom: 10%;
+    .translate-row {
+      position: absolute;
+      left: 30px;
+      top: 40px;
     }
-    // for hidden items
-    .hidden-item {
-        visibility: hidden;
-    }
-    body {
-        margin: 0 auto;
-        background-size: auto;
-    }
-    .progress-scroll {
+    .header__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .header__nav {
+        width: 100%;
         display: none;
-    }
-    .header {
-        margin-bottom: 10%;
-        .translate-row {
-            position: absolute;
-            left: 30px;
-            top: 40px;
-        }
-        .header__top {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .header__top-link {
-                display: none;
-            }
-            .header__nav {
-                width: 100%;
-                display: none;
-                justify-content: center;
-                margin-top: 0px;
-                position: relative;
-                .header__nav-link {
-                    margin: 21px 10px;
-                    padding: 20px;
-                }
-            }
-        }
-    }
-    .header .header__top .header__top-link-mobile {
-        display: flex;
         justify-content: center;
-        align-items: center;
-        padding-top: 50px;
-        margin: 0 auto;
+        margin-top: 0px;
+        position: relative;
+        .header__nav-link {
+          margin: 21px 10px;
+          padding: 20px;
+        }
+      }
     }
-    .header .header__top .header__nav-logo-mobile {
-        display: block;
-        margin: 0 auto;
-        width: 100px;
-    }
+  }
+  .header .header__top .header__top-link-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0 auto;
+  }
+  .header .header__top .header__nav-logo-mobile {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+  }
 
-    // BURGER MENU
-    .menu-wrap {
-        display: block;
-    }
+  // BURGER MENU
+  .menu-wrap {
+    display: block;
+  }
 
-    #hamburger {
-        display: block;
-    }
+  #hamburger {
+    display: block;
+  }
 
-    .main {
-        .main__first-screen {
-            width: 100%;
-            display: flex;
-            padding: 0;
-            margin-top: 130px;
-            flex-direction: column;
-            .main__content {
-                height: 530px;
-                justify-content: center;
-                align-items: flex-start;
-                margin-left: 50px;
-                padding-left: 0;
-                margin: 0 auto;
-                .main__first-title {
-                    margin: 0 auto;
-                    right: 0;
-                }
-                .sidepanel {
-                    display: none;
-                    position: absolute;
-                    z-index: 3;
-                    top: 400px;
-                    left: 0;
-                    margin-left: 10px;
-                    .socials {
-                        display: flex;
-                        align-items: center;
-                        flex-direction: row;
-                        width: auto;
-                        margin-bottom: 0;
-                        .social__link {
-                            font-size: 18px;
-                            line-height: 22px;
-                            transform: rotate(0);
-                            color: #ffffff;
-                            .social__icon {
-                                margin-left: 30px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .main-content__wrap {
-            align-items: center;
-            margin: 0 auto;
-            padding-bottom: 50px;
-        }
-        .main__second-title {
-            max-width: fit-content;
-            margin: 10px 0;
-            // padding: 0 25px;
-            padding: 0;
-            // text-align: justify;
-            font-weight: 600;
-            font-size: 25px;
-            line-height: 1.6;
-            // overflow-x: hidden;
-        }
-
-        .section {
-            margin-top: 0px;
-            margin: 0 auto;
-            .section--reverse {
-                flex-direction: column;
-                justify-content: center;
-                margin: 0 auto;
-            }
-        }
-        .section__read-more {
-            .read-more {
-                margin: 50px 0 50px !important;
-            }
-        }
-        .main__content-right {
-            margin: 0 auto;
-            img {
-                overflow: overlay;
-            }
-        }
-    }
-
-    .main-content-left {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center !important;
-        margin-bottom: 0;
+  .main {
+    .main__first-screen {
+      width: 100%;
+      display: flex;
+      padding: 0;
+      margin-top: 130px;
+      flex-direction: column;
+      .main__content {
+        height: 530px;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 50px;
         padding-left: 0;
-        padding-top: 0;
-        .m--width {
-            font-size: 30px !important;
+        margin: 0 auto;
+        .main__first-title {
+          margin: 0 auto;
+          right: 0;
         }
-        .abstract {
-            font-size: 80px;
-        }
-        .title--pos {
-            margin: 50px 0;
-            left: 25px;
-        }
-    }
-
-    .main-list {
-        padding: 0 15px;
-        overflow-y: hidden;
-    }
-    .main-list__item {
-        width: calc((100% - 40px) / 2);
-    }
-    .footer__categories {
-        justify-content: space-around;
-        flex-wrap: wrap;
-        .category {
-            flex-direction: column;
-            text-align: center;
+        .sidepanel {
+          display: none;
+          position: absolute;
+          z-index: 3;
+          top: 400px;
+          left: 0;
+          margin-left: 10px;
+          .socials {
+            display: flex;
             align-items: center;
+            flex-direction: row;
+            width: auto;
+            margin-bottom: 0;
+            .social__link {
+              font-size: 18px;
+              line-height: 22px;
+              transform: rotate(0);
+              color: #ffffff;
+              .social__icon {
+                margin-left: 30px;
+              }
+            }
+          }
         }
+      }
     }
-
-    .main-content-left .wrapper-main {
-        display: flex;
-        flex-direction: column;
+    .main-content__wrap {
+      align-items: center;
+      margin: 0 auto;
+      padding-bottom: 50px;
     }
-
-    // Bible
-
-    .bible-iframe {
-        margin-top: 80px;
-        width: 80vw;
-    }
-
-    .--main-descr-option {
-        padding: 0 15px;
-        font-size: 25px !important;
-    }
-
-    // Slider
-
-    .swiper-slide img {
-        width: auto;
-        height: auto;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        width: calc((30px) / 44 * 420) !important;
-    }
-
-    #liqpay_checkout {
-        margin-top: 50px;
-    }
-
-    // Пожертви
-
-    .main-content__item {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        a {
-            display: flex;
-            flex-direction: column;
-        }
-        p {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
-    }
-
     .main__second-title {
-        text-align: center;
+      max-width: fit-content;
+      margin: 10px 0;
+      // padding: 0 25px;
+      padding: 0;
+      // text-align: justify;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 1.6;
+      // overflow-x: hidden;
     }
 
-    .main .main__second-title {
-        max-width: initial;
-        margin: 0;
+    .section {
+      margin-top: 0px;
+      margin: 0 auto;
+      .section--reverse {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+      }
     }
+    .section__read-more {
+      .read-more {
+        margin: 50px 0 50px !important;
+      }
+    }
+    .main__content-right {
+      margin: 0 auto;
+      img {
+        overflow: overlay;
+      }
+    }
+  }
 
-    .main-second__list-link {
-        margin-left: 0;
-        padding: 0;
-        text-align: center;
+  .main-content-left {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center !important;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    .m--width {
+      font-size: 30px !important;
     }
+    .abstract {
+      font-size: 80px;
+    }
+    .title--pos {
+      margin: 50px 0;
+      left: 25px;
+    }
+  }
 
-    .number-privat {
-        cursor: pointer;
+  .main-list {
+    padding: 0 15px;
+    overflow-y: hidden;
+  }
+  .main-list__item {
+    width: calc((100% - 40px) / 2);
+  }
+  .footer__categories {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .category {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
     }
+  }
 
-    .section-list-item {
-        b {
-            font-size: 25px;
-        }
+  .main-content-left .wrapper-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // Bible
+
+  .bible-iframe {
+    margin-top: 80px;
+    width: 80vw;
+  }
+
+  .--main-descr-option {
+    padding: 0 15px;
+    font-size: 25px !important;
+  }
+
+  // Slider
+
+  .swiper-slide img {
+    width: auto;
+    height: auto;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: calc((30px) / 44 * 420) !important;
+  }
+
+  #liqpay_checkout {
+    margin-top: 50px;
+  }
+
+  // Пожертви
+
+  .main-content__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    a {
+      display: flex;
+      flex-direction: column;
     }
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .main__second-title {
+    text-align: center;
+  }
+
+  .main .main__second-title {
+    max-width: initial;
+    margin: 0;
+  }
+
+  .main-second__list-link {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .number-privat {
+    cursor: pointer;
+  }
+
+  .section-list-item {
+    b {
+      font-size: 25px;
+    }
+  }
 }
 
 // tablet to laptop L
 @include laptop {
-    .wrapper {
-        width: 100% !important;
-        padding: 0 100px;
-    }
-    .main {
-        .main__first-screen {
-            .main__content {
-                .main__second-title {
-                    max-width: 770px;
-                    font-size: 20px !important;
-                    line-height: 20px;
-                }
-            }
+  .wrapper {
+    width: 100% !important;
+    padding: 0 100px;
+  }
+  .main {
+    .main__first-screen {
+      .main__content {
+        .main__second-title {
+          max-width: 770px;
+          font-size: 20px !important;
+          line-height: 20px;
         }
+      }
     }
+  }
 
-    .swiper-button-next,
-    .swiper-button-prev {
-        width: calc((30px) / 44 * 520) !important;
-    }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: calc((30px) / 44 * 520) !important;
+  }
 
-    .main-content-iframe {
-        max-width: 580px;
-        padding-right: 70px;
-    }
+  .main-content-iframe {
+    max-width: 580px;
+    padding-right: 70px;
+  }
 
-    #section1 {
-        margin-top: 10%;
-    }
+  #section1 {
+    margin-top: 10%;
+  }
 
-    .main__descr {
-        padding-right: 15px;
-    }
+  .main__descr {
+    padding-right: 15px;
+  }
 
-    .--main-descr-option {
-        max-width: 773px;
-    }
+  .--main-descr-option {
+    max-width: 773px;
+  }
 
-    .main-list__descr {
-        font-size: 27px;
-        line-height: 1.3;
-    }
+  .main-list__descr {
+    font-size: 27px;
+    line-height: 1.3;
+  }
 
-    .main-list__item {
-        width: calc((100% - 200px) / 2);
-    }
+  .main-list__item {
+    width: calc((100% - 200px) / 2);
+  }
 
-    .m--width {
-        padding-right: 20px;
-    }
+  .m--width {
+    padding-right: 20px;
+  }
 
-    .progress-scroll {
-        right: 10px;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        .link--scroll {
-            padding: 13px;
-        }
+  .progress-scroll {
+    right: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .link--scroll {
+      padding: 13px;
     }
-    .sidepanel {
-        top: 50%;
-        transform: translate(-50%, -50%);
-        margin-left: 40px;
+  }
+  .sidepanel {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 40px;
+  }
+  .main-content-left {
+    display: flex;
+    align-items: center;
+    .title--pos {
+      max-width: 470px;
     }
-    .main-content-left {
-        display: flex;
-        align-items: center;
-        .title--pos {
-            max-width: 470px;
-        }
-    }
+  }
 
-    .wrapper-main {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        flex-wrap: wrap;
-    }
+  .wrapper-main {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    flex-wrap: wrap;
+  }
 
-    // Bible
+  // Bible
 
-    .bible-iframe {
-        width: 80vw;
-    }
+  .bible-iframe {
+    width: 80vw;
+  }
 
-    // first-screen-video
+  // first-screen-video
 
-    .new-section-preview-list__item {
-        width: 44%;
-    }
+  .new-section-preview-list__item {
+    width: 44%;
+  }
 }
 
 // laptop L to 4k
 @include desktop {
-    .wrapper {
-        width: 100% !important;
+  .wrapper {
+    width: 100% !important;
+  }
+  .main {
+    .main__first-screen {
+      .main__content {
+        margin-top: 12rem;
+        // margin-top: 28rem;
+      }
     }
-    .main {
-        .main__first-screen {
-            .main__content {
-                margin-top: 12rem;
-                // margin-top: 28rem;
-            }
-        }
-    }
-    .progress-scroll {
-        top: 50%;
-        right: 20px;
-    }
-    .sidepanel {
-        top: 255px;
-        margin-left: 0;
-    }
+  }
+  .progress-scroll {
+    top: 50%;
+    right: 20px;
+  }
+  .sidepanel {
+    top: 255px;
+    margin-left: 0;
+  }
 
-    .main-list__item {
-        width: calc((100% - 40px) / 3);
-    }
+  .main-list__item {
+    width: calc((100% - 40px) / 3);
+  }
 }

@@ -9,8 +9,13 @@
     align-items: center;
     justify-content: space-evenly;
 
+    .header__logo {
+      flex-shrink: 0;
+      margin-right: 10px;
+    }
+
     .header__nav {
-      width: 1500px;
+      width: 100%;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
