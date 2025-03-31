@@ -188,13 +188,13 @@
     .social__icon {
       margin-top: 45px;
 
-      >* {
+      > * {
         color: variables.$primary;
         fill: currentColor;
         transition: color 2s cubic-bezier(0.165, 0.84, 0.44, 1);
 
         :hover {
-          color: white
+          color: white;
         }
       }
     }

@@ -6,7 +6,7 @@
 
   .header__top {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-evenly;
 
     .header__nav {
@@ -14,7 +14,6 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      margin-top: 70px;
       position: relative;
 
       .header__nav-link {
@@ -34,8 +33,9 @@
     }
 
     .header__nav-logo {
-      display: inline;
-      width: 16rem;
+      display: block;
+      width: 150px;
+      height: 150px;
       margin-left: 50px;
     }
 
