@@ -64,6 +64,12 @@
   font-size: 28px;
   line-height: 1.4;
   color: variables.$base;
+
+  .source {
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+  }
 }
 
 .--option {
