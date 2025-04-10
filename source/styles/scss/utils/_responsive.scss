@@ -1,5 +1,5 @@
 @mixin mobile {
-  @media (min-width: 0px) and (max-width: 768px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
@@ -14,7 +14,7 @@
   }
 }
 @mixin desktop {
-  @media (min-width: 1441px) and (max-width: 2560px) {
+  @media (min-width: 1441px) {
     @content;
   }
 }
@@ -73,11 +73,8 @@
       }
     }
   }
-  .header .header__top .header__nav-logo-mobile {
-    width: 100px !important;
+  .header .header__top .header__nav-logo {
     margin-left: 0;
-    margin: 0 auto;
-    display: inline-block;
   }
 
   // BURGER MENU
@@ -545,11 +542,6 @@
   .footer__categories {
     justify-content: space-around;
     flex-wrap: wrap;
-    .category {
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
-    }
   }
 
   .main-content-left .wrapper-main {
