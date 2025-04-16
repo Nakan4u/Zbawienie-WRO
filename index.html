@@ -112,6 +112,7 @@
           target="_blank"
           class="social__icon"
           href="https://www.instagram.com/zbawienie.wro/"
+          aria-label="instagram"
         >
           <svg class="icon-instagram" width="30" height="30" alt="instagram">
             <use href="./source/img/symbol-defs.svg#icon-instagram"></use>
@@ -121,6 +122,7 @@
           target="_blank"
           class="social__icon"
           href="https://www.youtube.com/@zbawieniewroclaw"
+          aria-label="youtube channel"
         >
           <svg class="icon-youtube" width="30" height="30" alt="youtube">
             <use href="./source/img/symbol-defs.svg#icon-youtube"></use>
@@ -130,6 +132,7 @@
           target="_blank"
           class="social__icon"
           href="https://www.facebook.com/zbawienie.wro/"
+          aria-label="facebook"
         >
           <svg class="icon-facebook" width="30" height="30" alt="facebook">
             <use href="./source/img/symbol-defs.svg#icon-facebook"></use>
@@ -139,6 +142,7 @@
           target="_blank"
           class="social__icon"
           href="https://www.tiktok.com/@zbawienie.wroclaw"
+          aria-label="tiktok"
         >
           <svg
             fill="#fff"
@@ -158,7 +162,11 @@
     </div>
     <div class="progress-scroll">
       <div class="scroll">
-        <a class="header__nav-link link--scroll" href="#header">
+        <a
+          class="header__nav-link link--scroll"
+          href="#header"
+          aria-label="navigate to the page start"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -188,7 +196,11 @@
         <a class="header__nav-link link--scroll" href="#section10"
           >Корисні посилання
         </a>
-        <a class="header__nav-link link--scroll" href="#down">
+        <a
+          class="header__nav-link link--scroll"
+          href="#down"
+          aria-label="navigate to the page end"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -526,6 +538,7 @@
         </div>
         <div class="main__content-right">
           <iframe
+            title="Google maps our church location"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.8568734859314!2d16.973534776500053!3d51.11110083957697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc1e575363f83%3A0x6f26264bba38ff84!2sRudzka%2C%2052-007%20Wroc%C5%82aw!5e0!3m2!1sen!2spl!4v1743434196673!5m2!1sen!2spl"
             width="600"
             height="450"
@@ -599,7 +612,7 @@
         width="840"
         height="472"
         src="https://www.youtube.com/embed/QblGB-c3nP8?si=igEDtqIkuY5a7lGX"
-        title="YouTube video player"
+        title="YouTube our church video"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
@@ -610,7 +623,9 @@
 </section>
 
 
-      <button class="backToTopBtn"><i class="fas fa-angle-up"></i></button>
+      <button class="backToTopBtn" aria-label="navigate to the page start">
+        <i class="fas fa-angle-up"></i>
+      </button>
     </main>
 
     <footer class="footer" id="section10">
