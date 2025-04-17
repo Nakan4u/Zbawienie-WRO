@@ -1,41 +1,42 @@
 .swiper {
-    height: auto;
-    width: 80vw;
+  height: auto;
+  width: 80vw;
 }
 
 .swiper-wrapper {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .swiper-slide {
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-size: content;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-size: content;
 }
 
 .swiper-slide img {
-    width: auto;
-    height: 600px;
+  height: 600px;
+  width: auto;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin-left: 10px;
-    background: rgb(135 130 130);
-    width: 10px;
-    height: 10px;
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-left: 10px;
+  background: rgb(135 130 130);
+  width: 10px;
+  height: 10px;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    color: white;
+  color: white;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    width: calc((30px) / 44 * 500) !important;
+  width: calc((30px) / 44 * 500) !important;
 }
