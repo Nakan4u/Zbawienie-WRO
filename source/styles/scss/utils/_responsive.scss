@@ -370,8 +370,7 @@
 // tablet to laptop
 @include tablet {
   .wrapper {
-    width: 100% !important;
-    overflow-x: hidden !important;
+    width: 100%;
   }
   // for hidden items
   .hidden-item {
