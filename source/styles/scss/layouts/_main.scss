@@ -17,17 +17,10 @@
       align-items: flex-start;
       flex-direction: column;
       align-items: center;
-
-      .main__content-right {
-        img {
-          max-width: variables.$width;
-          min-height: 100%;
-          height: auto;
-          display: block;
-          background-size: contain;
-        }
-      }
     }
+  }
+  .main-content-img {
+    margin-top: 20px;
   }
 }
 
@@ -124,7 +117,7 @@
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 20px;
 
   .title--pos {
     margin-top: 0;
