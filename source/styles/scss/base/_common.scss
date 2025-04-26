@@ -76,10 +76,10 @@ img {
 
 .gt_float_switcher .gt-selected,
 .gt_float_switcher {
-  background: #111;
+  background: variables.$accent-color !important;
 }
 
 .gt_float_switcher .gt_options a,
 .gt_float_switcher .gt-selected .gt-current-lang {
-  color: white;
+  color: variables.$base !important;
 }
