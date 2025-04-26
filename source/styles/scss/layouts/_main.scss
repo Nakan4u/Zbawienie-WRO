@@ -80,6 +80,7 @@
 
   .main-second__list-item {
     margin-top: 20px;
+    list-style: outside;
 
     .main-second__list-link {
       color: variables.$base;
@@ -316,7 +317,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 1100px;
 }
 
 #liqpay_checkout {
