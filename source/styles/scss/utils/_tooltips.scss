@@ -1,0 +1,30 @@
+.tooltip {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  background-color: inherit;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 105%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.fa-copy.copy-item:hover {
+  cursor: pointer;
+}
+
+.tooltip .tooltip-text.show-tooltip {
+  visibility: visible;
+  opacity: 1;
+}

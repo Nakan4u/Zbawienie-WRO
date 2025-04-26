@@ -39,6 +39,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
   />
+  <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
   <title>Zbawienie kościół</title>
 </head>
 
@@ -571,7 +572,22 @@
 </section>
 
       <!-- Пожертви -->
-      <section id="section7" class="section">
+      <script>
+  <!-- TODO: implement copy paste feature with button and tooltips -->
+  // initiate copy-paste feature
+  const clipboard = new ClipboardJS(".copy-item");
+
+  clipboard.on("success", function (e) {
+    const tooltip = $(e.trigger).siblings(".tooltip-text");
+    tooltip.addClass("show-tooltip");
+
+    setTimeout(() => {
+      tooltip.removeClass("show-tooltip");
+    }, 1500);
+  });
+</script>
+
+<section id="section7" class="section">
   <div class="wrapper">
     <div class="main-content-left">
       <h2 data-aos="fade-right" class="abstract">Пожертви</h2>
@@ -582,31 +598,72 @@
           </h3>
           <ul>
             <li class="main-content__item">
-              <p class="main__second-title">
-                <i>PLN:</i>&nbsp;&nbsp;<b>36160014621747696740000001</b>
+              <p class="main__second-title tooltip">
+                <i>PLN:</i
+                ><a
+                  href="javascript:void(0)"
+                  class="copy-item"
+                  data-clipboard-text="36160014621747696740000001"
+                  >36160014621747696740000001</a
+                >
+                <i
+                  class="fa-regular fa-copy copy-item"
+                  data-clipboard-text="36160014621747696740000001"
+                ></i>
+                <span class="tooltip-text">Copied!</span>
               </p>
             </li>
             <li class="main-content__item">
-              <p class="main__second-title">
-                <i>EUR:</i>&nbsp;&nbsp;<b>09160014621747696740000002</b>
+              <p class="main__second-title tooltip">
+                <i>EUR:</i
+                ><a
+                  href="javascript:void(0)"
+                  class="copy-item"
+                  data-clipboard-text="09160014621747696740000002"
+                  >09160014621747696740000002</a
+                >
+                <i
+                  class="fa-regular fa-copy copy-item"
+                  data-clipboard-text="09160014621747696740000002"
+                ></i>
+                <span class="tooltip-text">Copied!</span>
               </p>
             </li>
             <li class="main-content__item">
-              <p class="main__second-title">
-                <i>USD:</i>&nbsp;&nbsp;<b>79160014621747696740000003</b>
+              <p class="main__second-title tooltip">
+                <i>USD:</i
+                ><a
+                  href="javascript:void(0)"
+                  class="copy-item"
+                  data-clipboard-text="79160014621747696740000003"
+                  >79160014621747696740000003</a
+                >
+                <i
+                  class="fa-regular fa-copy copy-item"
+                  data-clipboard-text="79160014621747696740000003"
+                ></i>
+                <span class="tooltip-text">Copied!</span>
               </p>
             </li>
             <li class="main-content__item">
-              <p class="main__second-title">
-                <i>BLIK:</i>&nbsp;&nbsp;<b>+48730321089</b>
+              <p class="main__second-title tooltip">
+                <i>BLIK:</i>
+                <a
+                  href="javascript:void(0)"
+                  class="copy-item"
+                  data-clipboard-text="+48730321089"
+                  >+48730321089</a
+                >
+                <i
+                  class="fa-regular fa-copy copy-item"
+                  data-clipboard-text="+48730321089"
+                ></i>
+                <span class="tooltip-text">Copied!</span>
               </p>
             </li>
             <li class="main-content__item">
-              <p
-                class="main__second-title"
-                style="display: flex; align-items: center; margin-right: 20px"
-              >
-                <i>PayPal:</i>&nbsp;&nbsp;
+              <p class="main__second-title tooltip">
+                <i>PayPal:</i>
                 <a href="https://www.paypal.me/Zbawienie" target="_blank"
                   >paypal.me/Zbawienie</a
                 >
